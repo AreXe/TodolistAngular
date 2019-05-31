@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'AngularCourse';
+  title = 'To-do list';
+  tasksList: Array<string> = [];
+  doneTasksList: Array<string> = [];
+
+  add(task: string) {
+    this.tasksList.push(task);
+  }
+
+  remove(task: string) {
+    this.tasksList = this.tasksList.filter(e => e !== task);
+  }
+
+  done(task: string) {
+    this.doneTasksList.push(task);
+    this.remove(task);
+  }
 }
