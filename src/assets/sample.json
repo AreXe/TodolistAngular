@@ -1,0 +1,18 @@
+[
+  {
+    "_id": null,
+    "name": "Example",
+    "created": "01.01.2019",
+    "end": "",
+    "isDone": "false"
+  },
+  {
+    "_id": {
+      "$oid": "5cf560821c9d4400005633a3"
+    },
+    "name": "Example",
+    "created": "01.01.2019",
+    "end": "",
+    "isDone": false
+  }
+]
